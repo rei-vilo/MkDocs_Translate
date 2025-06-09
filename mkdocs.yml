@@ -13,7 +13,7 @@ extra:
     # Too old 2023, does not work: generates
     #     https://translate.goog/?_x_tr_sl=en&_x_tr_tl=es
     # instead of 
-    #     https://pdls-pervasivedisplays-com.translate.goog/userguide/index.html?_x_tr_sl=en&_x_tr_tl=fr
+    #     https://<website>.translate.goog/userguide/index.html?_x_tr_sl=en&_x_tr_tl=fr
     alternate:
         # Original Language
       - name: English

@@ -1,21 +1,45 @@
-# Welcome to MkDocs
+# MkDocs Translate
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+Jump to the [generated website](https://rei-vilo.github.io/MkDocs_Translate/).
 
-## Commands
-
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
-
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+Go to the issue [Incomplete generated addresses for translation #1](https://github.com/sondregronas/mkdocs-google-translate/issues/1).
 
 ## Add-on tested
 
+[mkdocs-google-translate 1.2.0](https://pypi.org/project/mkdocs-google-translate/) and [GitHub repository](https://github.com/sondregronas/mkdocs-google-translate)
 
+## Issue
+
+Calling the translation from the dropdown menu opens 
+
+`https://translate.goog/?_x_tr_sl=en&_x_tr_tl=es`  
+
+instead of 
+
+`https://rei--vilo-github-io.translate.goog/MkDocs_Translate/?_x_tr_sl=en&_x_tr_tl=es`
+
+> Please find a minimal example with the [source code](https://github.com/rei-vilo/MkDocs_Translate/tree/gh-pages) and the [generated website](https://rei-vilo.github.io/MkDocs_Translate/).
+
+HTML code in the main page includes incomplete generated addresses.
+
+```htlm
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        
+          <li class="md-select__item">
+            <a href="%GT_RELATIVE_URL%" hreflang="en" class="md-select__link">
+              English
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="https://translate.goog/?_x_tr_sl=en&_x_tr_tl=es" hreflang="es" class="md-select__link">
+              Español
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+```
+
+How to fix this?
