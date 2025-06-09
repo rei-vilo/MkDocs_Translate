@@ -1,5 +1,7 @@
 # MkDocs Translate
 
+Test #4
+
 Jump to the [generated website](https://rei-vilo.github.io/MkDocs_Translate/).
 
 Go to the issue [Incomplete generated addresses for translation #1](https://github.com/sondregronas/mkdocs-google-translate/issues/1).
@@ -27,13 +29,13 @@ HTML code in the main page includes incomplete generated addresses.
       <ul class="md-select__list">
         
           <li class="md-select__item">
-            <a href="%GT_RELATIVE_URL%" hreflang="en" class="md-select__link">
+            <a href="" hreflang="en" class="md-select__link">
               English
             </a>
           </li>
         
           <li class="md-select__item">
-            <a href="https://translate.goog/?_x_tr_sl=en&_x_tr_tl=es" hreflang="es" class="md-select__link">
+            <a href="https://rei-vilo-github-io.translate.goog/?_x_tr_sl=en&_x_tr_tl=es" hreflang="es" class="md-select__link">
               Español
             </a>
           </li>
@@ -42,4 +44,14 @@ HTML code in the main page includes incomplete generated addresses.
     </div>
 ```
 
+Two differences when processing the original address `https://rei-vilo.github.io/MkDocs_Translate/`:
+
+    The `MkDocs_Translate/` part is missing.
+    The `-` from `rei-vilo` is rendered as `-` and should be `--`.
+
+I set the url: `https://rei-vilo.github.io/MkDocs_Translate/` option, to no avail.
+
+
 How to fix this?
+
+Thank you!
