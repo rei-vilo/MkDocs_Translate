@@ -6,6 +6,10 @@ repo_url: https://github.com/rei-vilo/MkDocs_Translate/
 theme:
     name: 'material'
 
+plugins:
+  - search
+  - google-translate
+  
 extra:
     alternate:
     # https://pypi.org/project/mkdocs-google-translate/
