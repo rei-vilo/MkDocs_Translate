@@ -60,7 +60,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#welcome-to-mkdocs" class="md-skip">
+        <a href="#mkdocs-translate" class="md-skip">
           Skip to content
         </a>
       
@@ -96,7 +96,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Welcome to MkDocs
+              MkDocs Translate
             
           </span>
         </div>
@@ -256,7 +256,7 @@
   
   
   <span class="md-ellipsis">
-    Welcome to MkDocs
+    MkDocs Translate
     
   </span>
   
@@ -269,7 +269,7 @@
   
   
   <span class="md-ellipsis">
-    Welcome to MkDocs
+    MkDocs Translate
     
   </span>
   
@@ -292,27 +292,18 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#commands" class="md-nav__link">
-    <span class="md-ellipsis">
-      Commands
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#project-layout" class="md-nav__link">
-    <span class="md-ellipsis">
-      Project layout
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#add-on-tested" class="md-nav__link">
     <span class="md-ellipsis">
       Add-on tested
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#issue" class="md-nav__link">
+    <span class="md-ellipsis">
+      Issue
     </span>
   </a>
   
@@ -353,27 +344,18 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#commands" class="md-nav__link">
-    <span class="md-ellipsis">
-      Commands
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#project-layout" class="md-nav__link">
-    <span class="md-ellipsis">
-      Project layout
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#add-on-tested" class="md-nav__link">
     <span class="md-ellipsis">
       Add-on tested
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#issue" class="md-nav__link">
+    <span class="md-ellipsis">
+      Issue
     </span>
   </a>
   
@@ -398,22 +380,39 @@
   
 
 
-<h1 id="welcome-to-mkdocs">Welcome to MkDocs</h1>
-<p>For full documentation visit <a href="https://www.mkdocs.org">mkdocs.org</a>.</p>
-<h2 id="commands">Commands</h2>
-<ul>
-<li><code>mkdocs new [dir-name]</code> - Create a new project.</li>
-<li><code>mkdocs serve</code> - Start the live-reloading docs server.</li>
-<li><code>mkdocs build</code> - Build the documentation site.</li>
-<li><code>mkdocs -h</code> - Print help message and exit.</li>
-</ul>
-<h2 id="project-layout">Project layout</h2>
-<pre><code>mkdocs.yml    # The configuration file.
-docs/
-    index.md  # The documentation homepage.
-    ...       # Other markdown pages, images and other files.
-</code></pre>
+<h1 id="mkdocs-translate">MkDocs Translate</h1>
+<p>Jump to the <a href="https://rei-vilo.github.io/MkDocs_Translate/">generated website</a>.</p>
+<p>Go to the issue <a href="https://github.com/sondregronas/mkdocs-google-translate/issues/1">Incomplete generated addresses for translation #1</a>.</p>
 <h2 id="add-on-tested">Add-on tested</h2>
+<p><a href="https://pypi.org/project/mkdocs-google-translate/">mkdocs-google-translate 1.2.0</a> and <a href="https://github.com/sondregronas/mkdocs-google-translate">GitHub repository</a></p>
+<h2 id="issue">Issue</h2>
+<p>Calling the translation from the dropdown menu opens </p>
+<p><code>https://translate.goog/?_x_tr_sl=en&amp;_x_tr_tl=es</code>  </p>
+<p>instead of </p>
+<p><code>https://rei--vilo-github-io.translate.goog/MkDocs_Translate/?_x_tr_sl=en&amp;_x_tr_tl=es</code></p>
+<blockquote>
+<p>Please find a minimal example with the <a href="https://github.com/rei-vilo/MkDocs_Translate/tree/gh-pages">source code</a> and the <a href="https://rei-vilo.github.io/MkDocs_Translate/">generated website</a>.</p>
+</blockquote>
+<p>HTML code in the main page includes incomplete generated addresses.</p>
+<pre><code class="language-htlm">    &lt;div class=&quot;md-select__inner&quot;&gt;
+      &lt;ul class=&quot;md-select__list&quot;&gt;
+
+          &lt;li class=&quot;md-select__item&quot;&gt;
+            &lt;a href=&quot;%GT_RELATIVE_URL%&quot; hreflang=&quot;en&quot; class=&quot;md-select__link&quot;&gt;
+              English
+            &lt;/a&gt;
+          &lt;/li&gt;
+
+          &lt;li class=&quot;md-select__item&quot;&gt;
+            &lt;a href=&quot;https://translate.goog/?_x_tr_sl=en&amp;_x_tr_tl=es&quot; hreflang=&quot;es&quot; class=&quot;md-select__link&quot;&gt;
+              Español
+            &lt;/a&gt;
+          &lt;/li&gt;
+
+      &lt;/ul&gt;
+    &lt;/div&gt;
+</code></pre>
+<p>How to fix this?</p>
 
 
 
