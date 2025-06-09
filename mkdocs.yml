@@ -7,13 +7,9 @@ theme:
     name: 'material'
 
 extra:
-    alternate:
     # https://pypi.org/project/mkdocs-google-translate/
     # pip install mkdocs-google-translate
-    # Too old 2023, does not work: generates
-    #     https://translate.goog/?_x_tr_sl=en&_x_tr_tl=es
-    # instead of 
-    #     https://<website>.translate.goog/userguide/index.html?_x_tr_sl=en&_x_tr_tl=fr
+    # See alternate: section
     alternate:
         # Original Language
       - name: English
@@ -25,11 +21,23 @@ extra:
         link: 'https://translate.goog/?_x_tr_sl=en&_x_tr_tl=es'
         # _x_tr_sl = source language
         # _x_tr_tl = translation language
+      - name: Chinese
+        lang: 'zh'
+        link: 'https://translate.goog/?_x_tr_sl=en&_x_tr_tl=zh'
+        # _x_tr_sl = source language
+        # _x_tr_tl = translation language
+      - name: Japanese
+        lang: 'jp'
+        link: 'https://translate.goog/?_x_tr_sl=en&_x_tr_tl=jp'
 
 
 plugins:
   - search
-  - google-translate:
-      url: https://rei-vilo.github.io/MkDocs_Translate/
+    # https://pypi.org/project/mkdocs-google-translate/
+    # pip install mkdocs-google-translate
+    # See alternate: section
+  - google-translate
+#   - google-translate:
+#       url: https://rei-vilo.github.io/MkDocs_Translate/
 
 

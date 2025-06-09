@@ -1,6 +1,10 @@
 # MkDocs Translate
 
-Test #5 with [release 1.3.1](https://github.com/sondregronas/mkdocs-google-translate/releases/tag/v1.3.1)
+Test #6 with 
+
+* [mkdocs-google-translate release 1.3.1](https://github.com/sondregronas/mkdocs-google-translate/releases/tag/v1.3.1)
+* Original in English `en` 
+* Three languages: Spanish `es`, Chinese `zh`, Japanese `jp`.
 
 Jump to the [generated website](https://rei-vilo.github.io/MkDocs_Translate/).
 
