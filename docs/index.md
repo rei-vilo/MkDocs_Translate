@@ -1,6 +1,6 @@
 # MkDocs Translate
 
-Test #4
+Test #5 with [release 1.3.1](https://github.com/sondregronas/mkdocs-google-translate/releases/tag/v1.3.1)
 
 Jump to the [generated website](https://rei-vilo.github.io/MkDocs_Translate/).
 
