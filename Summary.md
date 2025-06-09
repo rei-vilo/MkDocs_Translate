@@ -2,9 +2,9 @@
   
 ## Target
   
-**Date Time**         2025-06-09 10:42:37
+**Date Time**         2025-06-09 10:42:57
   
-**Target**            build
+**Target**            github
   
 **Python**            3.11.2
   
@@ -88,7 +88,7 @@ zipp                                      3.21.0
   
 ### GitHub / Azure DevOps
   
-**Commit**            Added .gitignore
+**Commit**            Added links to the issue
   
 **Branch**            main
   
